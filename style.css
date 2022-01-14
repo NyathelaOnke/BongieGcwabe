@@ -1,0 +1,701 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+html {
+  scroll-behavior: smooth;
+}
+body .backpic {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+}
+.max-width {
+  padding: 0 80px;
+  margin: auto;
+}
+/* The styling of the navigation bar. */
+.navbar {
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  padding: 20px 0;
+  background: rgba(255, 255, 255, 0.6);
+  font-family: "ubuntu", sans-serif;
+  transition: all 0.5 ease;
+}
+.navbar.sticky {
+  position: fixed;
+  padding: 19px 0;
+  background: rgba(210, 105, 30, 0.7);
+  backdrop-filter: blur(3.5px);
+  padding: 20px;
+  z-index: 999;
+}
+.navbar .max-width {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar .menu li a span {
+  color: rgb(29, 29, 29);
+  font-size: 1.52vw;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+  transition: color 0.4s ease-out;
+}
+.navbar .menu li a span:hover {
+  text-decoration: none;
+  color: rgb(170, 170, 170);
+}
+.navbar.sticky .menu li a:hover {
+  text-decoration: none;
+  color: rgb(170, 170, 170);
+}
+.navbar .menu li a:hover {
+  text-decoration: none;
+  color: rgb(170, 170, 170);
+}
+.menu-btn {
+  color: black;
+  font-size: 17px;
+  cursor: pointer;
+  display: none;
+}
+.navbar .logo a {
+  position: relative;
+  right: 50%;
+  color: rgb(48, 47, 47);
+  font-size: 3.1vw;
+  font-weight: 500;
+  letter-spacing: 0.24vw;
+}
+.navbar .logo a:hover {
+  font-weight: 550;
+  letter-spacing: 0.20vw;
+  text-decoration: none;
+}
+.navbar.sticky .logo a:hover {
+  font-weight: 600;
+  letter-spacing: 1.6px;
+  text-decoration: none;
+}
+
+.navbar .logo span {
+  color: rgb(88, 80, 80);
+}
+.navbar .menu li {
+  list-style: none;
+  display: inline-block;
+  position: relative;
+  left: 20%;
+}
+.navbar .menu li a {
+  color: black;
+  font-size: 1.52vw;
+  font-weight: 600;
+  margin-left: 1.5vw;
+  letter-spacing: 0.5px;
+  transition: color 0.4s ease-out;
+}
+.navbar .menu li a:hover {
+  text-decoration: none;
+  color: rgb(102, 100, 100);
+}
+
+/* The home section styling */
+
+.home {
+  position: relative;
+  display: flex;
+  background: rgba(255, 255, 255, 0.6);
+  height: 55vw;
+  color: rgb(10, 10, 10);
+  min-height: 500px;
+  font-family: "ubuntu", sans-serif;
+}
+.home .home-content .pic {
+  position: relative;
+  right: 28.8vw;
+  height: 46vw;
+  width: 34.8vw;
+}
+.home .home-content .text {
+  position: relative;
+  bottom: 32vw;
+  left: 8vw;
+}
+.home .home-content .text .text1 {/*
+  font-size: 35px;*/
+  font-size: 3.2vw;
+}
+.home .home-content .text .text2 {/*
+  font-size: 30px;*/
+  font-size: 2.9vw;
+}
+.home .home-content .text .text3 {/*
+  font-size: 45px;*/
+  font-size: 3.95vw;
+  letter-spacing: .08vw;
+  font-weight: bold 600;
+}
+.home .home-content .text .text4 {/*
+  font-size: 35px;*/
+  font-size: 3.2vw;
+}
+.home .home-content .text a {
+  display: inline-block;
+  text-decoration: wavy;
+  background-color: rgb(202, 107, 24);
+  padding: .5vw 2vw;
+  color: black;
+  font-weight: 700;
+  font-size: 1.5vw;
+  margin-top: 8px;
+  border-radius: 4px;
+  border: 2px solid saddlebrown;
+  transition: all 0.4s ease-out;
+}
+.home .home-content .text a:hover {
+  background: none;
+}
+/*
+The about section styling
+*/
+section {
+  padding: 35px 0;
+}
+.Services,
+.contact,
+footer {
+  position: relative;
+  font-family: "poppin", sans-serif;
+  background: rgba(0, 0, 0, 0.675);
+}
+.About{
+  position: relative;
+  font-family: "poppin",
+  sans-serif;
+  background: whitesmoke
+}
+.About .tittle,
+.Services .tittle,
+.Testemonies .tittle,
+.contact .tittle {
+  position: relative;
+  text-align: center;
+  padding-bottom: 25px;
+  font-size: 2.7vw;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 450;
+}
+.About .tittle::after,
+.Services .tittle::after,
+.Testemonies .tittle::after,
+.contact .tittle::after {
+  position: absolute;
+  bottom: 11px;
+  left: 50%;
+  letter-spacing: .25vw;
+  padding: 4px;
+  font-size: 1.2vw;
+  color: saddlebrown;
+  transform: translateX(-50%);
+}
+.About .tittle::after {
+  content: "Bongeka Gcwabe";
+}
+.Services .tittle::after {
+  content: "How can I help YOU";
+}
+.About .about-content {
+  justify-content: space-between;
+  font-size: 1.8vw;
+}
+.About .about-content .column img {
+  align-items: center;
+  height: 25vw;
+  width: 20vw;
+  object-fit: cover;
+  border-radius: 15px;
+  transition: all 0.4s ease-out;
+}
+.About .about-content .column p {
+  text-align: center;
+  font-size: 1.5vw;
+}
+.About .about-content .right2 ul {
+  position: relative;
+  text-align: center;
+}
+.About .about-content .right3 p{
+  font-size: 1.5vw;
+  text-align: center;
+}
+.About .about-content .right3 img{
+  align-items: center;
+  height: 25vw;
+  width: 20vw;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+/*Services styling starts here*/
+
+.Services {/*
+  height: 230vw;*/
+  background-color: rgba(160, 160, 160, 0.8);
+}
+.Services .tittle::after {
+  content: "How can I help YOU?";
+}
+
+.Services .services-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 2.3vw;
+}
+.Services .services-content .card {
+  position: relative;
+  top: 3.1vw;
+  margin-top: 30px;
+  background: rgb(165, 165, 165, 0.85);
+  border-radius: 12px;
+  padding: 10px 10px;
+  cursor: pointer;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+.Services .services-content .card:hover {
+  color: black;
+  background: rgba(210, 105, 30, 0.267);
+}
+.Services .services-content .card:hover .box {
+  transform: scale(1.02);
+}
+.Services .services-content .card .box p a {
+  display: inline-block;
+  background-color: rgb(202, 107, 24);
+  padding: .4vw 1.5vw;
+  font-size: 1.5vw;
+  color: black;
+  margin-top: 8px;
+  border-radius: 4px;
+  border: .2vw solid saddlebrown;
+  transition: all 0.4s ease-out;
+}
+.Services .services-content .card .box a:hover {
+  background: none;
+  text-decoration: none;
+}
+.Services .services-content .card i {
+  color: saddlebrown;
+}
+.Services .services-content .card .box .text {
+  font-size: 2.5vw;
+  font-weight: 550;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+.Services .services-content .card .box p {
+  color: black;
+  font-size: 1.75vw;
+}
+.Services .services-content .card .box ul{
+  position: relative;
+  left: 3.5vw;
+  font-size: 1.75vw;
+  text-align: start;
+}
+.Services .services-content .card .box .text::after {
+  content: "";
+  position: absolute;
+  bottom: 11px;
+  left: 50%;
+  letter-spacing: 2.5px;
+  padding: 4px;
+  font-size: 9px;
+  color: saddlebrown;
+  transform: translateX(-50%);
+}
+.Services .services-content .card .box a {
+  font-size: 10px;
+  padding: 3px 8px;
+  margin-top: 4px;
+  border-radius: 3px;
+}
+
+/*Testemonies styling start here*/
+.Testemonies {
+  position: relative;
+  font-family: "poppin", sans-serif;
+  height: 30vw;
+  background-color: none;
+}
+.Testemonies .testmo1 {
+  font-size: 1.8vw;
+  position: relative;
+}
+.Testemonies .tittle::after {
+  content: "What people say.";
+}
+.Testemonies .testmo1 .card {
+  background: rgba(245, 245, 245, 0.85);
+  border-radius: 1vw;
+  box-shadow: gray;
+  font-style: oblique;
+  width: 60%
+  position: relative;
+  top: 1vw;
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 450;
+}
+.Testemonies .testmo1 .card .text {
+  font-weight: 400;
+  font-style: normal;
+}
+
+.Testemonies .testmo1 .card p{
+  color: sienna;
+  font-size: 2.5vw;
+  position: relative;
+  top: 2vw;
+}
+
+
+/*Contact me styling starts here.*/
+
+.contact {
+ /* height: 115vw;*/
+  background-color: #f2f2f270;
+  color: whitesmoke;
+}
+.contact .tittle::after {
+  content: "Get in touch.";
+}
+.contact .contact-content {
+  font-size: 1.9vw;
+  position: relative;
+  right: 2.8vw;
+}
+
+.contact .contact-content .con{
+  display: flex;
+}
+
+.contact .contact-content .con .address,
+.contact .contact-content .icons .address .info .head {
+  display: none;
+}
+.contact .contact-content .con .map iframe{
+  width: 60vw;
+  height: 22vw;
+  position: relative;
+  left: 7vw;
+  top: 1.5vw;
+}
+.contact .contact-content .icons {
+  position: relative;
+  top: 40px;
+  margin-top: 30px;
+  width: calc(58% - 45px);
+}
+.contact .contact-content .text {
+  font-size: 2.1vw;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.contact .contact-content p {
+  text-align: justify;
+}
+.contact .contact-content .rows i {
+  font-size: 2vw;
+  color: sienna;
+}
+.contact .contact-content .rows .info {
+  position: relative;
+  margin-bottom: 2px;
+}
+.contact .contact-content .icons .rows .info .head {
+  font-weight: 700;
+  font-size: 1.5vw;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-bottom: 1px solid wheat;
+  background-color: #f2f2f270;
+  border-radius: 4px;
+  resize: vertical;
+}textarea{
+  resize: vertical;
+}textarea{
+  border: 1px solid wheat;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type="submit"] {
+  background-color: sandybrown;
+  color: black;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  align-items: center;
+}
+
+input[type="submit"]:hover {
+  background-color: saddlebrown;
+}
+
+.container {
+  position: relative;
+  top: 2.5vw;
+  border-radius: 5px;
+  background-color: #f2f2f270;
+  padding: 20px;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+  font-size: 1.8vw;
+  font-weight: 600;
+  color: white;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+  font-size: 1.6vw;
+}
+.col-75 input {
+  background-color: #f2f2f270;
+  color: rgb(139, 69, 19);
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer styling starts here */
+footer {
+  color: whitesmoke;
+  background: rgba(0, 0, 0, 0.6);
+  /*height: 7vw;*/
+  text-align: center;
+}
+footer p {
+  position: relative;
+  top: 3.5vw;
+  font-size: 1.4vw;
+}
+footer p a {
+  color: sandybrown;
+  text-decoration: none;
+}
+footer p a:hover {
+  color: saddlebrown;
+  text-decoration: underline;
+}
+
+/**/
+@media screen and (max-width: 600px) {
+  .col-25,
+  .col-75,
+  input[type="submit"] {
+    width: 100%;
+    margin-top: 0;
+  } 
+  .about .about-content .column{
+  width: 225%;
+  }
+  .Testemonies,
+  .contact-content,
+  footer {
+    width: 100%;
+    padding: 0;
+  }
+
+  .navbar .logo a {
+    position: relative;
+    right: 31vw;
+    font-size: 4.5vw;
+  }
+
+  .home .home-content .pic{
+    position: relative;
+    top: 1vw;
+  }
+  .home .home-content .text .text1 {
+    font-size: 4vw;
+  }
+
+  .home .home-content .text .text2 {
+    font-size: 3.8vw;
+  }
+
+  .home .home-content .text .text3 {
+    font-size: 4.5vw;
+    letter-spacing: 0.08vw;
+    font-weight: bold 600;
+  }
+  .home .home-content{
+    position: relative;
+    left: 0.5vw;
+  }
+  .Services .services-content .card .box p{
+    font-size: 2.1vw;
+  }
+
+  .contact .contact-content{
+    font-size: 3.6vw;
+  }
+  .contact .contact-content .con .icons .rows{
+    position: relative;
+    right: 13vw;
+  }
+  .contact .contact-content .con .icons .rows .sub-tittle{
+    font-size: 2.5vw;
+  }
+  .contact .contact-content .con .map{
+    display: none;
+  }
+  .contact .contact-content .con .address,
+  .contact .contact-content .icons .address .info .head {
+    display: block;
+  }
+  .contact .contact-content .con .icons{
+    display: flex;
+  }
+  .contact .contact-content .con .icons .rows{
+    position: relative;
+    bottom: 12vw;
+    margin-left: 9vw;
+  }
+
+  .contact .contact-content .con .icons .rows .sub-tittle{
+    text-align: center;
+  }
+  .home .home-content .text .text4 {
+    font-size: 3.8vw;
+  }
+  .About .about-content .column p{
+    font-size: 3.4vw;
+  }
+
+  .Testemonies .testmo1 .card p {
+    position: relative;
+    top: 7vw;
+    font-size: 3vw;
+  }
+  .contact .contact-content .icons .rows .info .head{
+    font-size: 3.2vw;
+  }
+
+  .Testemonies {
+    height: 45vw;
+  }
+
+  .contact .contact-content .text{
+    font-size: 3.8vw;
+  }
+  footer{
+   /* height: 12vw;*/
+  }
+  footer p {
+    top: 6vw;
+    font-size: 2vw;
+  }
+  .contact {
+   /* height: 347vw;*/
+  }
+}
+@media (max-width: 550px) {
+  .max-width {
+    padding: 0 85px;
+  }
+  .navbar .menu-btn {
+    display: block;
+    z-index: 999;
+    position: relative;
+    left: 12vw;
+  }
+  .menu-btn i.active:before {
+    content: "\f00d";
+  }
+  .navbar .menu {
+    position: fixed;
+   /* height: 66vh;*/
+    width: 40%;
+    left: 110%;
+    top: 0;
+    background: chocolate;
+    text-align: center;
+    padding: 50px;
+    transition: all 0.3s ease-in;
+  }
+  .navbar .menu.active {
+    left: 0;
+  }
+  .navbar .menu li {
+    display: block;
+    position: relative;
+    left: -55%;
+    items-align: center;
+  }
+  .navbar .menu li a, .navbar .menu li a span{
+    font-size: 4.5vw;
+  }
+  .navbar .menu li a {
+    display: inline-block;
+    margin: 4.5vw 2vw;
+  }
+  .home .home-content .text a{
+    font-size: 2.8vw;
+  }
+  .Services{
+   /* height: 445vw; */
+  }
+  .contact {
+   /* height: 352vw; */
+  }
+  .Testemonies .testmo1 .card{
+    padding-bottom: 5.5vw;
+  }
+  
+}
+@media screen and (max-width: 400px) {
+
+  .contact .container{
+    font-size: 2.8vw;
+  }
+
+  .Testemonies .testmo1 {
+    height: 46vw;
+  }
+}
